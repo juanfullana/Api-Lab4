@@ -1,0 +1,169 @@
+{
+	"info": {
+		"_postman_id": "9cff1080-6f4d-43a1-a353-e971b3e9d3c5",
+		"name": "NASA",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19570056"
+	},
+	"item": [
+		{
+			"name": "Listado objetos cercanos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/NASA/cercanos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"NASA",
+						"cercanos"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Listado objetos cercanos",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/NASA/cercanos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"NASA",
+								"cercanos"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": "Value",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				}
+			]
+		},
+		{
+			"name": "Obtener objeto específico",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/NASA/cercanos/:id",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"NASA",
+						"cercanos",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": null
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Obtener objeto específico",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/NASA/cercanos/2017511",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"NASA",
+								"cercanos",
+								"2017511"
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				}
+			]
+		},
+		{
+			"name": "Listado objetos filtrados por dia",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/NASA/cercanos?date",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"NASA",
+						"cercanos"
+					],
+					"query": [
+						{
+							"key": "date",
+							"value": null
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Listado objetos filtrados por dia",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/NASA/cercanos?date==2005-08-10",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"NASA",
+								"cercanos"
+							],
+							"query": [
+								{
+									"key": "date",
+									"value": "=2005-08-10"
+								}
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				}
+			]
+		}
+	]
+}

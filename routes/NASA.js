@@ -5,6 +5,5 @@ const router = Router();
 
 router.get('/cercanos', getCercanos)
 router.get('/cercanos/:id', getObjeto)
-router.get('/cercanos/', getPeligrosos)
 
 module.exports = router;
