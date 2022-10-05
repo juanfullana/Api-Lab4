@@ -3,7 +3,7 @@ API en Node y Express.js que consume el API de la NASA para consultar sobre obje
 
 Para filtrar un dia específico de esa semana podemos usar /cercanos?date=YYYY-M-D
 
-Heroku - pendiente
+Heroku (https://api-nasa.herokuapp.com/NASA/)
 
 Para realizar consultas hay que adquirir una API_KEY en la pagina web de la NASA y configurar el archivo .env
 
