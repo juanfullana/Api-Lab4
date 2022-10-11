@@ -1,5 +1,5 @@
 const { Router } = require("express");
-const { getCercanos, getObjeto, getPeligrosos } = require("../controllers/NASA");
+const { getCercanos, getObjeto } = require("../controllers/NASA");
 
 const router = Router();
 
