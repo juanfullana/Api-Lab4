@@ -20,6 +20,7 @@ class Server{
         this.app.use('/NASA',require('../routes/NASA'));
 
         this.app.all('*', (req, res) =>{
+            //Estandarizar formato de salida/respuesta
             res.send('404 PAGINA NO ENCONTRADA')
         })
     }
